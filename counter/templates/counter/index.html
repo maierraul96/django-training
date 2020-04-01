@@ -13,6 +13,13 @@
     <input type="submit" value="Increment" name="increment" formaction="{% url 'counter:increment' %}">
     <input type="submit" value="Decrement" name="decrement" formaction="{% url 'counter:decrement' %}">
 </form>
+<br>
+<form method="post" action="{% url 'counter:set_value' %}">
+    {% csrf_token %}
+    <label for="svalue">Set value:</label>
+    <input type="text" id="svalue" name="value">
+    <input type="submit" value="Submit">
+</form>
 
 </body>
 </html>

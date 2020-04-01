@@ -26,6 +26,10 @@ def decrement(request):
     return HttpResponseRedirect(reverse('counter:index'))
 
 
-def count(request):
+def set_value(request):
+    print(request.POST['value'])
     print(request.POST)
+    counter = Counter.objects.first()
+    counter.value = request.POST['value']
+    counter.save()
     return HttpResponseRedirect(reverse('counter:index'))

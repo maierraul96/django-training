@@ -1,0 +1,1 @@
+#!/bin/shpython /opt/app/django_training/manage.py runserver 0.0.0.0:8000

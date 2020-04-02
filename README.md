@@ -27,6 +27,8 @@ set DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
 set DJANGO_SETTINGS_MODULE=django_training.settings
 ```
   - Change directory to "django_project": `cd django_project`
+  - Configure DB in `django_project/django_training/settings.py`
+  - Apply migrations: `py manage.py migrate`
   - Make changes to code
   - Run tests: `py manage.py test`
   - Run server: `py amange.py runserver 8000`

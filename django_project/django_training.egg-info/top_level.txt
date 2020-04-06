@@ -1,2 +1,0 @@
-counter
-django_training
